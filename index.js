@@ -126,6 +126,11 @@ run().catch(console.dir);
 app.get('/', (req, res) => {
     res.send('Running Genius car Service Server');
 });
+app.get('/hero', (req, res) => {
+    res.send('Hero meets hero');
+});
+
+
 
 app.listen(port, () => {
     console.log('listening to port', port);
